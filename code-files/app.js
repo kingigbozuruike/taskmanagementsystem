@@ -1,5 +1,6 @@
 const taskForm=document.getElementById("task-form")
 const taskList=document.getElementById("task-list")
+const taskContainer = document.querySelector(".list-container")
 
 taskForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -14,6 +15,16 @@ taskForm.addEventListener("submit", function (event) {
         
        taskItem.addEventListener("click", function () {
         this.classList.toggle("completed")
+       });
+       
+       taskContainer.appendChild(taskItem);
+       const deleteButton = document.createElement('button');
+       deleteButton.classList.add('delete-task');
+       deleteButton.textContent = 'Delete';
+       taskContainer.appendChild(deleteButton)
+
+       deleteButton.addEventListener('click', function () {
+        this.parentNode.remove();
        });
     
        
@@ -32,7 +43,7 @@ taskForm.addEventListener("submit", function (event) {
         })
        })
         
-        taskList.appendChild(taskItem);
+        taskList.appendChild(taskContainer);
         taskInput.value = "";
     }
 });

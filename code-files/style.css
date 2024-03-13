@@ -92,3 +92,10 @@ button:hover {
     flex-direction: column;
 }
 
+#motivational-quote {
+    font-style: italic;
+    font-weight: bold;
+    background-color: white;
+    font-size: larger;
+    margin-bottom: 20px;
+}

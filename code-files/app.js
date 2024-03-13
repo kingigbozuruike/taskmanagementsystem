@@ -1,3 +1,4 @@
+// code for handling user input, to-do completion, and deletion
 const taskForm=document.getElementById("task-form")
 const taskList=document.getElementById("task-list")
 const taskContainer = document.querySelector(".list-container")
@@ -13,11 +14,14 @@ taskForm.addEventListener("submit", function (event) {
         taskItem.classList.add("task-item"); 
         taskItem.textContent = taskText;
         
-       taskItem.addEventListener("click", function () {
+       //adds the user input as a to-do
+        taskItem.addEventListener("click", function () {
         this.classList.toggle("completed")
        });
        
        taskContainer.appendChild(taskItem);
+       
+       //implementation of the delete button to delete unwanted to-dos
        const deleteButton = document.createElement('button');
        deleteButton.classList.add('delete-task');
        deleteButton.textContent = 'Delete';
@@ -34,7 +38,7 @@ taskForm.addEventListener("submit", function (event) {
 });
 
 
-
+//code to display motivation and suffle it on a timely basis
 const quotes = [
     "The best way to predict the future is to create it",
     "The only way to do great work is to love what you do.",

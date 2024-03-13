@@ -17,6 +17,7 @@ h1 {
     text-shadow: 1px 1px 2px grey;
 }
 
+/* Input bar and Button */
 input, button {
     outline: none;
     border: none;
@@ -27,16 +28,17 @@ input, button {
     transition: all 0.3s ease;
     margin-bottom: 1rem;
 }
-
+/* Hover function for button */
 button:hover {
     background-color: rgb(101, 101, 101);
 }
-
+/* restricts the width of the container*/
 .container {
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* style for the to-do, animation added for UI/UX efficiency */
 .task-item {
     width: fit-content;
     height: 40px;
@@ -50,6 +52,7 @@ button:hover {
     padding-top: 8px;
     animation: animateIn 0.3s ease;
 }
+
 @keyframes animateIn {
     0% {
         opacity: 0;
@@ -71,6 +74,7 @@ button:hover {
     }
 }
 
+/* style for the delete button */
 .delete-task {
     margin-left: 10px;
     padding-top: 5px;
@@ -99,3 +103,13 @@ button:hover {
     font-size: larger;
     margin-bottom: 20px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    padding: 5px;
+    font-weight: bolder;
+    background-color: white;
+}
+

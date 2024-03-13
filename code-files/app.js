@@ -21,10 +21,10 @@ taskForm.addEventListener("submit", function (event) {
        const deleteButton = document.createElement('button');
        deleteButton.classList.add('delete-task');
        deleteButton.textContent = 'Delete';
-       taskContainer.appendChild(deleteButton)
+       taskItem.appendChild(deleteButton)
 
        deleteButton.addEventListener('click', function () {
-        this.parentNode.remove();
+        this.parentElement.remove();
        });
     
        

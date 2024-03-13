@@ -3,6 +3,7 @@ const taskForm=document.getElementById("task-form")
 const taskList=document.getElementById("task-list")
 const taskContainer = document.querySelector(".list-container")
 
+
 taskForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -36,7 +37,6 @@ taskForm.addEventListener("submit", function (event) {
         taskInput.value = "";
     }
 });
-
 
 //code to display motivation and suffle it on a timely basis
 const quotes = [
@@ -73,7 +73,7 @@ function updateQuote () {
 };
 
 updateQuote();
-setInterval(updateQuote, 1800000);
+setInterval(updateQuote, 300000);
 
 
 

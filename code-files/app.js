@@ -27,21 +27,6 @@ taskForm.addEventListener("submit", function (event) {
         this.parentElement.remove();
        });
     
-       
-       taskItem.addEventListener("dblclick", function () {
-        const taskText = this.textContent;
-        const inputField = document.createElement("input");
-        inputField.type = "text"
-        inputField.value = taskText;
-        
-        this.textContent = "";
-        this.appendChild(inputField);
-
-        inputField.addEventListener("blur", function () {
-            const newTasktext = this.value;
-            taskItem.textContent = newTasktext
-        })
-       })
         
         taskList.appendChild(taskContainer);
         taskInput.value = "";

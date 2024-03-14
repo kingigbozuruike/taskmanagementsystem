@@ -2,8 +2,7 @@
 
 Task Management System is a simple web application that allows users to manage their tasks/to-dos, letting them mark off completed tasks, delete uneccesary tasks and motivational quotes to keep them going.
 
-
-[demo](./demo.png)
+![demo](demo.png)
 
 ## Technologies Used
 
